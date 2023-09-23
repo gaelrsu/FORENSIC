@@ -21,7 +21,7 @@ https://github.com/EricZimmerman/AmcacheParser
 
 
 # SRUM
-## SRUMDUMP
+## SRUM-DUMP
 https://github.com/MarkBaggett/srum-dump
 
 
