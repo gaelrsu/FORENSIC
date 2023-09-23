@@ -1,23 +1,41 @@
+# Tools
+
+
+# Application
+
+## Registry Explorer
+
+## AppCompatCacheParser.exe
+https://github.com/EricZimmerman/AppCompatCacheParser
+extract metadata associated with application execution
+
+## Volatility 
+On kali extract from volatility memory 
+https://github.com/volatilityfoundation/volatility3
+```bash
+volatility -f membump.mem --profile=Win10x64_14393 shincachemem --output=csv --output-file=./shimcache.csv
+```
+
+## AmcacheParser
+https://github.com/EricZimmerman/AmcacheParser
+
+
+# SRUM
+## SRUMDUMP
+https://github.com/MarkBaggett/srum-dump
 
 
 
 
 
 
-
-
-
-scdbg shellcode debugger
+## scdbg shellcode debugger
 ```
 scdbg.exe binName.bin
 ```
 
 
 checksum verification or heuristic analysis.
-
-
-
-
 
 
 
