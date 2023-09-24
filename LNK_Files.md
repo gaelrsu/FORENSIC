@@ -26,19 +26,34 @@ Are not an OLECF and not contain streams
 LNK file data can often be carved from this files
 Possible to be parsing via hex editor
 ```
+## Paths
+```
+C:\Users\UserName\AppData\Roaming\Microsoft\Windows\Recent
+C:\Users\UserName\AppData\Roaming\Microsoft\Office\Recent
+# With CMD
+C:\Users\UserName\AppData\Roaming\Microsoft\Windows\Recent\AutomaticDestinations
+C:\Users\UserName\AppData\Roaming\Microsoft\Office\Recent\CustomDestinations
+```
+## Exiftool
+```
+exiftool capture.png.lnk
+```
 
+## LNK explorer
+https://github.com/EricZimmerman/LECmd
+```
+LECmd.exe
 
+LECmd.exe -d C:\Users\UserName\AppData\Roaming\Microsoft\Windows\Recent -q --csv \PathForTheOutput
+```
 
-
-
-
-
-
-
-
-
-
-
+## Jump List Explorer
+https://github.com/EricZimmerman/JLECmd
+https://github.com/EricZimmerman/JumpList/blob/master/JumpList/Resources/AppIDs.txt
+```
+JLECmd.exe
+JLECmd.exe -f C:\Users\UserName\AppData\Roaming\Microsoft\Windows\Recent\AutomaticDestinations\<IDsnumber>.AutomaticDestinations-ms -q --csv \Path-to-save
+```
 
 
 
