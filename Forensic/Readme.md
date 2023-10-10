@@ -1,6 +1,7 @@
 # Forensic
 ```
 Forensic Process: The digital forensics process typically involves several stages:
+
 Identification: Determining potential sources of evidence.
 Collection: Gathering data using forensically sound methods.
 Examination: Analyzing the collected data for relevant information.
