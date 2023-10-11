@@ -48,9 +48,8 @@ imaging plays a critical role in investigations by allowing analysts to examine 
 altering or compromising the original data.
 ```
 ## Tools
-[AFF4 Imager](https://github.com/Velocidex/c-aff4)
-
-[FTK Imager](https://www.exterro.com/ftk-imager)
+- [AFF4 Imager](https://github.com/Velocidex/c-aff4)
+- [FTK Imager](https://www.exterro.com/ftk-imager)
 
 
 __________________________________________________________________________________
