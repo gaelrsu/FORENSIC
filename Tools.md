@@ -49,7 +49,7 @@ altering or compromising the original data.
 ```
 ```
 # Tools
-[FTK Imager]([URL de redirection](https://www.exterro.com/ftk-imager))
+[FTK Imager](https://www.exterro.com/ftk-imager)
 ```
 
 __________________________________________________________________________________
