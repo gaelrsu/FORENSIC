@@ -64,7 +64,8 @@ ________________________________________________________________________________
 - [Magnet RAM Capture](https://www.magnetforensics.com/resources/magnet-ram-capture/) capture the volatile memory of a system
 - [LiME (Linux Memory Extractor)](https://github.com/504ensicsLabs/LiME) capture volatile memory evading many common anti-forensic measures
 
-
+## Rapid Triage
+- [KAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape)
 
 
 
