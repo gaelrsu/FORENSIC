@@ -1,8 +1,10 @@
 # Web Browser Forensics
 ```
 Browsing History: Records of websites visited, including URLs, titles, timestamps, and visit frequency.
-Cookies: Small data files stored by websites on a user's device, containing information such as session details, preferences, and authentication tokens.
-Cache: Cached copies of web pages, images, and other content visited by the user. Can reveal websites accessed even if the history is cleared.
+Cookies: Small data files stored by websites on a user's device, containing information such as session details,
+preferences, and authentication tokens.
+Cache: Cached copies of web pages, images, and other content visited by the user. Can reveal websites accessed
+even if the history is cleared.
 Bookmarks/Favorites: Saved links to frequently visited websites or pages of interest.
 Download History: Records of downloaded files, including source URLs, filenames, and timestamps.
 Autofill Data: Information automatically entered into forms, such as names, addresses, and passwords.
