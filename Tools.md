@@ -47,11 +47,10 @@ data integrity, and maintaining the admissibility of evidence in legal proceedin
 imaging plays a critical role in investigations by allowing analysts to examine evidence without
 altering or compromising the original data.
 ```
-```
-# Tools
+## Tools
 [AFF4 Imager](https://github.com/Velocidex/c-aff4)
 [FTK Imager](https://www.exterro.com/ftk-imager)
-```
+
 
 __________________________________________________________________________________
 # links
