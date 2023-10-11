@@ -50,6 +50,9 @@ altering or compromising the original data.
 ## Tools
 - [AFF4 Imager](https://github.com/Velocidex/c-aff4)
 - [FTK Imager](https://www.exterro.com/ftk-imager)
+- DD and DCFLDD
+- Virtualization Tools
+- Mount the image with [Arsenal Image Mounter](https://arsenalrecon.com/downloads)
 
 
 __________________________________________________________________________________
