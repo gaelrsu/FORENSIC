@@ -52,7 +52,7 @@ https://www.sans.org/blog/sans-dfir-course-roadmap-and-job-role-matrix/
 
 https://www.13cubed.com/downloads/dfir_cheat_sheet.pdf
 
-
+https://codered.eccouncil.org/course/digital-forensics-essentials?logged=true
 
 
 
