@@ -52,7 +52,20 @@ altering or compromising the original data.
 - [FTK Imager](https://www.exterro.com/ftk-imager)
 - DD and DCFLDD
 - Virtualization Tools
-- Mount the image with [Arsenal Image Mounter](https://arsenalrecon.com/downloads)
+- Mount the image from a wm with [Arsenal Image Mounter](https://arsenalrecon.com/downloads)
+
+__________________________________________________________________________________
+# Extracting Host-based Evidence & Rapid Triage
+## memory acquisition tools
+- [WinPmem](https://github.com/Velocidex/WinPmem)
+- [DumpIt](https://www.magnetforensics.com/resources/magnet-dumpit-for-windows/) generates a physical memory dump of Windows and Linux
+- [MemDump](https://www.nirsoft.net/utils/nircmd.html) capture the contents of a system's RAM
+- [Belkasoft RAM Capturer](https://belkasoft.com/ram-capturer) capture the RAM of a running Windows computer
+- [Magnet RAM Capture](https://www.magnetforensics.com/resources/magnet-ram-capture/) capture the volatile memory of a system
+- [LiME (Linux Memory Extractor)](https://github.com/504ensicsLabs/LiME) capture volatile memory evading many common anti-forensic measures
+
+
+
 
 
 __________________________________________________________________________________
