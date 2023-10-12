@@ -16,7 +16,7 @@ types of data found in RAM that are valuable for incident investigation:
 - Process memory regions
 
 
-
+________________________________________________________________________________________
 
 ## Forensics memory approach
    1/ Process Identification and Verification: Let's begin by identifying all active processes. Malicious software often masquerades as legitimate processes, sometimes with subtle name variations to avoid detection. We need to:
