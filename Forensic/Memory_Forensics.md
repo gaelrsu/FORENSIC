@@ -58,6 +58,40 @@ ________________________________________________________________________________
 - Storing them securely for subsequent examination using specialized forensic tools.
 
 
+________________________________________________________________________________________
+
+# Volatility Framework
+
+- Volatility v2: https://github.com/volatilityfoundation/volatility/wiki/Command-Reference
+-Volatility v3: https://volatility3.readthedocs.io/en/latest/index.html
+[CheatSheet](https://blog.onfvp.com/post/volatility-cheatsheet/)
+### Identifying the Profile
+```
+vol.py -f /home/UserName/Dumps/Win7-2515534d.vmem imageinfo 
+```
+### Identifying Running Processes
+```
+vol.py -f /home/UserName/Dumps/Win7-2515534d.vmem --profile=Win7SP1x64 pslist
+```
+### Identifying Network Artifcats
+```
+vol.py -f /home/UserName/Dumps/Win7-2515534d.vmem --profile=Win7SP1x64 netscan
+```
+#### Identifying Injected Code
+```
+vol.py -f /home/UserName/Dumps/Win7-2515534d.vmem --profile=Win7SP1x64 malfind --pid=608
+```
+#### Identifying Handles
+```
+# Handles are files and object references held by a specific process within a memory dump.
+vol.py -f /home/UserName/Dumps/Win7-2515534d.vmem --profile=Win7SP1x64 handles -p 1512 --object-type=Key
+vol.py -f /home/UserName/Dumps/MemoryDumps/Win7-2515534d.vmem --profile=Win7SP1x64 handles -p 1512 --object-type=File
+vol.py -f /home/UserName/Dumps/MemoryDumps/Win7-2515534d.vmem --profile=Win7SP1x64 handles -p 1512 --object-type=Process
+```
+
+
+
+
 
 
 
