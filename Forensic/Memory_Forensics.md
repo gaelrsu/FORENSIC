@@ -42,9 +42,20 @@ types of data found in RAM that are valuable for incident investigation:
   - Trace back to the parent process.
   - Evaluate its behavior and necessity.
 
+   4/ Code Injection Detection: Advanced adversaries often employ techniques like process hollowing or utilize unmapped memory sections. To counter this, we should:
+   
+- Use memory analysis tools to detect anomalies or signs of these techniques.
+- Identify any processes that seem to occupy unusual memory spaces or exhibit unexpected behaviors.
 
+   5/ Rootkit Discovery: Achieving stealth and persistence is a common goal for adversaries. Rootkits, which embed deep within the OS, grant threat actors continuous, often elevated, system access while evading detection. To tackle this:
+   
+- Scan for signs of rootkit activity or deep OS alterations.
+- Identify any processes or drivers operating at unusually high privileges or exhibiting stealth behaviors.
 
-
+  6/  Extraction of Suspicious Elements: After pinpointing suspicious processes, drivers, or executables, we need to isolate them for in-depth analysis. This involves:
+  
+- Dumping the suspicious components from memory.
+- Storing them securely for subsequent examination using specialized forensic tools.
 
 
 
