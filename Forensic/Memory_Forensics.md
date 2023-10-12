@@ -65,7 +65,8 @@ ________________________________________________________________________________
 - Volatility v2: https://github.com/volatilityfoundation/volatility/wiki/Command-Reference
 -Volatility v3: https://volatility3.readthedocs.io/en/latest/index.html
 [CheatSheet](https://blog.onfvp.com/post/volatility-cheatsheet/)
-### Identifying the Profile
+
+## Identifying Profile
 ```
 vol.py -f /home/UserName/Dumps/Win7-2515534d.vmem imageinfo 
 ```
@@ -88,6 +89,27 @@ vol.py -f /home/UserName/Dumps/Win7-2515534d.vmem --profile=Win7SP1x64 handles -
 vol.py -f /home/UserName/Dumps/MemoryDumps/Win7-2515534d.vmem --profile=Win7SP1x64 handles -p 1512 --object-type=File
 vol.py -f /home/UserName/Dumps/MemoryDumps/Win7-2515534d.vmem --profile=Win7SP1x64 handles -p 1512 --object-type=Process
 ```
+
+### Identifying Windows Services
+```
+vol.py -f /home/UserName/Dumps/Win7-2515534d.vmem --profile=Win7SP1x64 svcscan | more
+```
+
+### Identifying Loaded DLLs
+```
+vol.py -f /home/UserName/Dumps/Win7-2515534d.vmem --profile=Win7SP1x64 dlllist -p 1512
+```
+
+### Identifying Hives (registry files)
+```
+vol.py -f /home/UserName/Dumps/Win7-2515534d.vmem --profile=Win7SP1x64 hivelist
+```
+
+## Rootkit Analysis
+[EPROCESS](https://www.nirsoft.net/kernel_struct/vista/EPROCESS.html)
+
+
+
 
 
 
