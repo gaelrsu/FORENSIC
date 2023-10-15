@@ -109,9 +109,23 @@ vol.py -f /home/UserName/Dumps/Win7-2515534d.vmem --profile=Win7SP1x64 hivelist
 [EPROCESS](https://www.nirsoft.net/kernel_struct/vista/EPROCESS.html) is a data structure in the Windows kernel that represents a process
 
 
+### FLINK and BLINK
+    
+    flink: Is a forward pointer that points to the ActiveProcessLinks list entry of the _next_ EPROCESS structure in the list of active processes.
+    blink: Is a backward pointer within the EPROCESS structure that points to the ActiveProcessLinks list entry of the _previous_ EPROCESS structure in the list of active processes.
 
+```
+Exemple :
+Flink  =>  Flink  =>  Flink
+Blink  <\_ Blink  <\_ Blink
+Blink back to Flink
+``` 
+### Identifying Rootkit Signs
 
-
+```
+vol.py -f /home/Username/MemoryDumps/rootkit.vmem psscan
+pslist cant find the hidden binary unlike psscan 
+``` 
 
 
 
