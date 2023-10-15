@@ -122,15 +122,21 @@ Blink back to Flink
 ``` 
 ### Identifying Rootkit Signs
 
-```
+```bash
 vol.py -f /home/Username/MemoryDumps/rootkit.vmem psscan
-pslist cant find the hidden binary unlike psscan 
+# pslist cant find the hidden binary unlike psscan 
 ``` 
 
+## Memory Analysis Using Strings
 
-
-
-
+### Find iPv4 Addresses
+```bash
+strings /home/UserName/MemoryDumps/Win7-2516634d.vmem | grep -E "\b([0-9]{1,3}\.){3}[0-9]{1,3}\b"
+``` 
+### Email Addresses
+```bash
+strings /home/UserName/MemoryDumps/Win7-2516634d.vmem | grep -oE "\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}\b"
+``` 
 
 
 
