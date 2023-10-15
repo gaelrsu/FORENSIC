@@ -106,7 +106,7 @@ vol.py -f /home/UserName/Dumps/Win7-2515534d.vmem --profile=Win7SP1x64 hivelist
 ```
 
 ## Rootkit Analysis
-[EPROCESS](https://www.nirsoft.net/kernel_struct/vista/EPROCESS.html)
+[EPROCESS](https://www.nirsoft.net/kernel_struct/vista/EPROCESS.html) is a data structure in the Windows kernel that represents a process
 
 
 
