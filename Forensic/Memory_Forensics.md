@@ -137,9 +137,10 @@ strings /home/UserName/MemoryDumps/Win7-2516634d.vmem | grep -E "\b([0-9]{1,3}\.
 ```bash
 strings /home/UserName/MemoryDumps/Win7-2516634d.vmem | grep -oE "\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}\b"
 ``` 
-
-
-
+### Identifying Command Prompt and PowerShell Artifacts
+```bash
+strings /home/htb-student/MemoryDumps/Win7-2515534d.vmem | grep -E "(cmd|powershell|bash)[^\s]+"
+``` 
 
 
 
