@@ -14,6 +14,7 @@ or easily accessible via standard Windows API functions.```
 
 ### MFT Explorer tool
 GUI , you just have to select the file
+use 'inspect file record' to see MFT details
 
 ### MFTECmd
 ```bash
