@@ -68,6 +68,10 @@ ________________________________________________________________________________
 - [KAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape)
 - [Velociraptor ](https://github.com/Velocidex/velociraptor)
 
+__________________________________________________________________________________
+# Find Persistence
+- [Autoruns](https://learn.microsoft.com/fr-fr/sysinternals/downloads/autoruns)
+
 
 
 __________________________________________________________________________________
