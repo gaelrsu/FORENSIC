@@ -42,6 +42,8 @@ python vol.py -q -f ..\memdump\PhysicalMemory.raw windows.netstat
 # OR
 python vol.py -q -f ..\memdump\PhysicalMemory.raw windows.netscan
 ```
-
-
-
+## Extracting payload Beacon Configuration
+with https://github.com/Sentinel-One/CobaltStrikeParser you can extract the cabalt strick beacon
+```bash
+python parse_beacon_config.py D:\payload.dll
+```
