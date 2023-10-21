@@ -67,6 +67,7 @@ ________________________________________________________________________________
 ## Rapid Triage
 - [KAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape)
 - [Velociraptor ](https://github.com/Velocidex/velociraptor)
+- [Chainsaw](https://github.com/WithSecureLabs/chainsaw)
 
 __________________________________________________________________________________
 # Find Persistence
