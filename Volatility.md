@@ -7,6 +7,7 @@ python vol.py -q -f ..\memdump\PhysicalMemory.raw windows.info
 ## Identifying Injected Code
 ```bash
 python vol.py -q -f ..\memdump\PhysicalMemory.raw windows.malfind
+# check for PAGE_EXECUTE_READWRITE
 ```
 ## Identifying Running Processes
 ```bash
