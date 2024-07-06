@@ -13,6 +13,7 @@ https://codered.eccouncil.org/course/digital-forensics-essentials?logged=false
 https://courses.edx.org/
 https://itmasters.edu.au/
 https://www.open.edu/
+https://codered.eccouncil.org/
 
 ## VIDEOS
 https://www.youtube.com/user/davisrichardg
