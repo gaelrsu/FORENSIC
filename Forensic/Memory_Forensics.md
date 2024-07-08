@@ -62,8 +62,8 @@ ________________________________________________________________________________
 
 # Volatility Framework
 
-- Volatility v2: https://github.com/volatilityfoundation/volatility/wiki/Command-Reference
--Volatility v3: https://volatility3.readthedocs.io/en/latest/index.html
+-Volatility v2: https://github.com/volatilityfoundation/volatility/wiki/Command-Reference \
+-Volatility v3: https://volatility3.readthedocs.io/en/latest/index.html \
 [CheatSheet](https://blog.onfvp.com/post/volatility-cheatsheet/)
 
 ## Identifying Profile
