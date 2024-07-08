@@ -22,6 +22,11 @@ use 'inspect file record' to see MFT details
   Use the entry sequence found with MFT Explorer ex : 0x17170
 ```
 
+## KAPE
+Rapid artifact parsing and extraction solutions.
+[KAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape)
+
+
 
 
 
