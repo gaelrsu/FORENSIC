@@ -13,14 +13,18 @@ Image Viewer: At times, the images stored on systems can tell a story of their o
 Metadata Analysis: Details like file creation timestamps, hashes, and disk location can be invaluable. Consider a scenario where you're trying to match the launch time of an app with a malware alert. Such correlations can be the linchpin in your investigation.
 
 ## Tool 
-[Autopsy](https://www.autopsy.com/)
 
 [FTK Imager](https://www.exterro.com/digital-forensics-software/ftk-imager) 
 Create an image of a disk. \
 Select File -> Create Disk Image -> select the media source -> Choose the destination -> select the image type -> start
 
+[Arsenal Image Mounter](https://arsenalrecon.com/downloads) 
+ mount a disk image \
+ 
 [AFF4 Imager](https://github.com/Velocidex/c-aff4) 
 Create and duplicate a forensic disk image. extract files based on their creation time, segment volumes, and reduce the time taken for imaging through compression.
+
+[Autopsy](https://www.autopsy.com/)
 
 
 
