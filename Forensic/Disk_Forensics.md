@@ -15,6 +15,11 @@ Metadata Analysis: Details like file creation timestamps, hashes, and disk locat
 ## Tool 
 [Autopsy](https://www.autopsy.com/)
 
+[FTK Imager](https://www.exterro.com/digital-forensics-software/ftk-imager) 
+Create an image of a disk.
+
+[AFF4 Imager](https://github.com/Velocidex/c-aff4) 
+Create and duplicate a forensic disk image. extract files based on their creation time, segment volumes, and reduce the time taken for imaging through compression.
 
 
 
