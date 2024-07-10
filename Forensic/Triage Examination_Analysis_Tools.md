@@ -68,19 +68,23 @@ send the extract to Timeline Explorer
 ```
 inside : <KAPE_output_folder>\Windows\System32\winevt\logs
 ```
+
 ### EvtxECmd
 ```
 find :
 C:\Users\johndoe\Desktop\Get-ZimmermanTools\net6\EvtxeCmd
 
 Use :
-EvtxeCmd.exe -f "C:\Temp\Application.evtx" --csv "c:\temp\out" --csvf MyOutputFile.csv
+EvtxeCmd.exe -f "C:\Temp\Application.evtx" --csv "c:\temp\out" --csvf MyOutputFile.csv 
+
 sync the map : 
-.\EvtxECmd.exe --sync
+.\EvtxECmd.exe --sync 
+
 convert file to a CSV file :
 .\EvtxECmd.exe -f "C:\Users\grsu\Desktop\forensic_data\kape_output\D\Windows\System32\winevt\logs\Microsoft-Windows-Sysmon%4Operational.evtx" --csv "C:\Users\grsu\Desktop\forensic_data\event_logs\csv_timeline" --csvf kape_log.csv EvtxECmd version 1.5.4.0
 after that upload it in Timeline Explorer
 ```
+
 ### EQL
 ```
 pip install eql
