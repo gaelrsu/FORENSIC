@@ -162,12 +162,33 @@ Go to C:\Users\grsu\Desktop\forensic_data\kape_output\D\Windows\System32\config 
 ```
 ## Amcache
 used to store evidence related to program execution.
-```
 located at C:\Windows\AppCompat\Programs\AmCache.hve
 parse it with [AmcacheParser](https://github.com/EricZimmerman/AmcacheParser)
-
+```
 parse and convert this file into a CSV :
 .\AmcacheParser.exe -f "C:\Users\johndoe\Desktop\forensic_data\kape_output\D\Windows\AppCompat\Programs\AmCache.hve" --csv C:\Users\johndoe\Desktop\forensic_data\amcache-analysis
+```
+## BAM (Background Activity Moderator)
+tracks and logs the execution of certain types of background or scheduled tasks.
+```
+On the registry explorer :
+HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\bam\State\UserSettings\{USER-SID}
+```
+____________________________________________________________________________________________________________  
+## API Call Data
+
+### API Monitor
+[API Monitor](http://www.rohitab.com/apimonitor)
+```
+File menu, choose Open find the location of the .apmx64 file and select it.
+```
+### Registry Persistence via Run Keys
+```
+look for RegOpenKeyExA function search for RegOpenKey on the Find console
+```
+### Process Injection
+```
+search for the CreateProcess
 ```
 
 
