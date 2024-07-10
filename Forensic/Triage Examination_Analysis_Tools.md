@@ -43,6 +43,10 @@ use 'inspect file record' to see MFT details
   Use the entry sequence found with MFT Explorer ex : 0x17170
 ```
 
+## Analyzing Timeline with Timeline Explorer
+```
+Timeline Explorer (by Eric Zimmerman) used to create and analyse timeline artifacts from differents sources. 
+```
 
 ## KAPE
 Rapid artifact parsing and extraction solutions.
