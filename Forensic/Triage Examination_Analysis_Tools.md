@@ -48,6 +48,22 @@ use 'inspect file record' to see MFT details
 Timeline Explorer (by Eric Zimmerman) used to create and analyse timeline artifacts from differents sources. 
 ```
 
+## MFT File Record
+### MFTECmd
+```
+.\MFTECmd.exe -f 'C:\Users\grsu\Desktop\forensic_data\kape_output\D\$MFT' --de 27142 MFTECmd version 1.2.3
+```
+
+## USN Journal
+### KAPE
+used to collect USN Journal in the following directory: <KAPE_output_folder>\<Drive>\$Extend
+### MFTECmd
+```
+.\MFTECmd.exe -f 'C:\Users\grsu\Desktop\forensic_data\kape_output\D\$Extend\$J' --csv C:\Users\grsu\Desktop\forensic_data\mft_analysis\ --csvf MFT_J.csv MFTECmd version 1.2.3
+```
+send the extract to Timeline Explorer 
+
+
 ## KAPE
 Rapid artifact parsing and extraction solutions.
 [KAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape)
