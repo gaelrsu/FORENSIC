@@ -63,6 +63,36 @@ used to collect USN Journal in the following directory: <KAPE_output_folder>\<Dr
 ```
 send the extract to Timeline Explorer 
 
+## Windows Event Logs
+### KAPE
+```
+inside : <KAPE_output_folder>\Windows\System32\winevt\logs
+```
+### EvtxECmd
+```
+find :
+C:\Users\johndoe\Desktop\Get-ZimmermanTools\net6\EvtxeCmd
+
+Use :
+EvtxeCmd.exe -f "C:\Temp\Application.evtx" --csv "c:\temp\out" --csvf MyOutputFile.csv
+sync the map : 
+.\EvtxECmd.exe --sync
+convert file to a CSV file :
+.\EvtxECmd.exe -f "C:\Users\grsu\Desktop\forensic_data\kape_output\D\Windows\System32\winevt\logs\Microsoft-Windows-Sysmon%4Operational.evtx" --csv "C:\Users\grsu\Desktop\forensic_data\event_logs\csv_timeline" --csvf kape_log.csv EvtxECmd version 1.5.4.0
+after that upload it in Timeline Explorer
+```
+### EQL
+```
+pip install eql
+locate :
+C:\Users\grsu\Desktop\eqllib-master
+
+parsing Sysmon events from Windows Event Logs :
+import-module .\scrape-events.ps1
+
+activate the Get-EventProps function :
+Get-WinEvent -Path C:\Users\grsu\Desktop\forensic_data\kape_output\D\Windows\System32\winevt\logs\Microsoft-Windows-Sysmon%4Operational.evtx -Oldest | Get-EventProps | ConvertTo-Json | Out-File -Encoding ASCII -FilePath C:\Users\grsu\Desktop\forensic_data\event_logs\eql_format_json\eql-sysmon-data-kape.json
+```
 
 ## KAPE
 Rapid artifact parsing and extraction solutions.
