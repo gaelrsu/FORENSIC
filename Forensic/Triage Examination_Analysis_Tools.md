@@ -47,6 +47,7 @@ use 'inspect file record' to see MFT details
 ## Zone.Identifier
 When a file is fetched from the internet, Windows assigns it a Zone Identifier (ZoneId). This ZoneId, embedded in the file's metadata, signifies the source or security zone of the file's origin. 
 ```
+dans /Downloads
 Get-Item * -Stream Zone.Identifier -ErrorAction SilentlyContinue
 Get-Content * -Stream Zone.Identifier -ErrorAction SilentlyContinue
 ```
