@@ -24,6 +24,9 @@ Select File -> Create Disk Image -> select the media source -> Choose the destin
 [AFF4 Imager](https://github.com/Velocidex/c-aff4) 
 Create and duplicate a forensic disk image. extract files based on their creation time, segment volumes, and reduce the time taken for imaging through compression.
 
+[Active@ Disk Editor](https://www.disk-editor.org/index.html) 
+viewing and modifying of raw disk data, including the Master File Table of an NTFS system.
+
 [Autopsy](https://www.autopsy.com/)
 
 
