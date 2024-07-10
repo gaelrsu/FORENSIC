@@ -23,6 +23,8 @@ indispensable tools
         Modified Timestamp (M): The Modified timestamp is not updated when the file is accessed. \
         Accessed Timestamp (A): The Accessed timestamp is updated to reflect the time of access. \
         Birth (Created) Timestamp (b): The Birth timestamp is not updated when the file is accessed. 
+
+____________________________________________________________________________________________________________      
         
 ## $MFT
 ```
@@ -53,7 +55,7 @@ Timeline Explorer (by Eric Zimmerman) used to create and analyse timeline artifa
 ```
 .\MFTECmd.exe -f 'C:\Users\grsu\Desktop\forensic_data\kape_output\D\$MFT' --de 27142 MFTECmd version 1.2.3
 ```
-
+____________________________________________________________________________________________________________  
 ## USN Journal
 ### KAPE
 used to collect USN Journal in the following directory: <KAPE_output_folder>\<Drive>\$Extend
@@ -62,7 +64,7 @@ used to collect USN Journal in the following directory: <KAPE_output_folder>\<Dr
 .\MFTECmd.exe -f 'C:\Users\grsu\Desktop\forensic_data\kape_output\D\$Extend\$J' --csv C:\Users\grsu\Desktop\forensic_data\mft_analysis\ --csvf MFT_J.csv MFTECmd version 1.2.3
 ```
 send the extract to Timeline Explorer 
-
+____________________________________________________________________________________________________________  
 ## Windows Event Logs
 ### KAPE
 ```
@@ -115,6 +117,10 @@ display user/group :
 ``` 
 eql query -f C:\Users\grsu\Desktop\forensic_data\event_logs\eql_format_json\eql-sysmon-data-kape.json "EventId=1 and (Image='*net.exe' and (wildcard(CommandLine, '* user*', '*localgroup *', '*group *')))"
 ```
+
+____________________________________________________________________________________________________________  
+## Windows Registry
+
 
 ## KAPE
 Rapid artifact parsing and extraction solutions.
