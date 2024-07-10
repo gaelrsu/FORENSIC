@@ -53,7 +53,7 @@ Timeline Explorer (by Eric Zimmerman) used to create and analyse timeline artifa
 ## MFT File Record
 ### MFTECmd
 ```
-.\MFTECmd.exe -f 'C:\Users\grsu\Desktop\forensic_data\kape_output\D\$MFT' --de 27142 MFTECmd version 1.2.3
+.\MFTECmd.exe -f 'C:\Users\grsu\Desktop\forensic_data\kape_output\D\$MFT' --de 27142
 ```
 ____________________________________________________________________________________________________________  
 ## USN Journal
@@ -61,7 +61,7 @@ ________________________________________________________________________________
 used to collect USN Journal in the following directory: <KAPE_output_folder>\<Drive>\$Extend
 ### MFTECmd
 ```
-.\MFTECmd.exe -f 'C:\Users\grsu\Desktop\forensic_data\kape_output\D\$Extend\$J' --csv C:\Users\grsu\Desktop\forensic_data\mft_analysis\ --csvf MFT_J.csv MFTECmd version 1.2.3
+.\MFTECmd.exe -f 'C:\Users\grsu\Desktop\forensic_data\kape_output\D\$Extend\$J' --csv C:\Users\grsu\Desktop\forensic_data\mft_analysis\ --csvf MFT_J.csv
 ```
 send the extract to Timeline Explorer 
 ____________________________________________________________________________________________________________  
@@ -89,7 +89,7 @@ sync the map :
 
 convert file to a CSV file :
 ```
-.\EvtxECmd.exe -f "C:\Users\grsu\Desktop\forensic_data\kape_output\D\Windows\System32\winevt\logs\Microsoft-Windows-Sysmon%4Operational.evtx" --csv "C:\Users\grsu\Desktop\forensic_data\event_logs\csv_timeline" --csvf kape_log.csv EvtxECmd version 1.5.4.0
+.\EvtxECmd.exe -f "C:\Users\grsu\Desktop\forensic_data\kape_output\D\Windows\System32\winevt\logs\Microsoft-Windows-Sysmon%4Operational.evtx" --csv "C:\Users\grsu\Desktop\forensic_data\event_logs\csv_timeline" --csvf kape_log.csv
 after that upload it in Timeline Explorer
 ```
 
@@ -120,6 +120,55 @@ eql query -f C:\Users\grsu\Desktop\forensic_data\event_logs\eql_format_json\eql-
 
 ____________________________________________________________________________________________________________  
 ## Windows Registry
+### KAPE store :
+```
+<KAPE_output_folder>\Windows\System32\config
+```
+### Registry Explorer
+```
+GUI interface used to navigate and dissect the contents of Windows Registry
+C:\Users\johndoe\Desktop\Get-ZimmermanTools\net6\RegistryExplorer
+```
+### RegRipper
+```
+.\rip.exe -h
+.\rip.exe -l -c > plugins.csv
+choose a plugin with -p
+.\rip.exe -r "C:\Users\grsu\Desktop\forensic_data\kape_output\D\Windows\System32\config\SYSTEM" -p compname
+```
+____________________________________________________________________________________________________________  
+## Investigation of Prefetch
+Prefetch files are created for every program that is executed on a Windows system, prefetch files are stored in the C:\Windows\Prefetch\ directory.
+### KAPE
+```
+<KAPE_output_folder>\Windows\prefetch
+```
+### PECmd
+```
+located : C:\Users\johndoe\Desktop\Get-ZimmermanTools\net6
+.\PECmd.exe -h
+.\PECmd.exe -f C:\Users\grsu\Desktop\forensic_data\kape_output\D\Windows\prefetch\DISCORD.EXE-7191FAD6.pf
+```
+#### Convert Prefetch Files to CSV to load it in Timeline Explorer
+```
+.\PECmd.exe -d C:\Users\grsu\Desktop\forensic_data\kape_output\D\Windows\prefetch --csv C:\Users\grsu\Desktop\forensic_data\prefetch_analysis
+```
+____________________________________________________________________________________________________________  
+## ShimCache 
+use to detect the execution of potentially malicious files.
+located : HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\ControlSet001\Control\Session Manager\AppCompatCache
+```
+Go to C:\Users\grsu\Desktop\forensic_data\kape_output\D\Windows\System32\config in the registry explorer and select AppCompatCache
+```
+## Amcache
+used to store evidence related to program execution.
+```
+located at C:\Windows\AppCompat\Programs\AmCache.hve
+parse it with [AmcacheParser](https://github.com/EricZimmerman/AmcacheParser)
+
+parse and convert this file into a CSV :
+.\AmcacheParser.exe -f "C:\Users\johndoe\Desktop\forensic_data\kape_output\D\Windows\AppCompat\Programs\AmCache.hve" --csv C:\Users\johndoe\Desktop\forensic_data\amcache-analysis
+```
 
 
 ## KAPE
