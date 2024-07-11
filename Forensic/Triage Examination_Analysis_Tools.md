@@ -43,6 +43,8 @@ use 'inspect file record' to see MFT details
 ```bash
 .\MFTECmd.exe -f 'C:\Users\johndoe\Desktop\FileName.txt
   Use the entry sequence found with MFT Explorer ex : 0x17170
+parse the $MFT file and save it on a csv file
+C:\Users\grsu\Desktop\Get-ZimmermanTools\net6\MFTECmd.exe -f C:\Users\grsu\Desktop\files\mft_data --csv C:\Users\grsu\Desktop\ --csvf mft_csv.csv
 ```
 ## Zone.Identifier
 When a file is fetched from the internet, Windows assigns it a Zone Identifier (ZoneId). This ZoneId, embedded in the file's metadata, signifies the source or security zone of the file's origin. 
