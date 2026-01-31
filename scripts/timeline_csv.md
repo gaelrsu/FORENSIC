@@ -1,3 +1,5 @@
+##pour importation dans Excel Autopsy Timesketch ###
+
 #!/bin/bash
 BASE="/media/ubuntu/USB/forensic_sorted"
 OUT="/media/ubuntu/USB/timeline_windows.csv"
